@@ -45,57 +45,57 @@ CRUD uygulamaları çoğu web uygulamasının temelidir. Harici bir kaynaktan ve
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın.
-- [ ] Proje dizinine girin
-- [ ] `npm install`
-- [ ] `npm start`
+- [+] Forklayın.
+- [+] Klonlayın.
+- [+] Proje dizinine girin
+- [+] `npm install`
+- [+] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
 #### Film düzenleme
 
-- [ ] Öncelikle, filmi düzenle bileşenine gidebilmemiz gerekiyor. App.js içinde, `<EditMovieForm> ` bileşenine edit route unu ekleyin.
+- [+] Öncelikle, filmi düzenle bileşenine gidebilmemiz gerekiyor. App.js içinde, `<EditMovieForm> ` bileşenine edit route unu ekleyin.
 
-- [ ] Ardından, url aracılığıyla bileşene iletilen idyi almamız gerekiyor.. id yi almak için `useParams` hookunu kullanın.
+- [+] Ardından, url aracılığıyla bileşene iletilen idyi almamız gerekiyor.. id yi almak için `useParams` hookunu kullanın.
 
-- [ ] Mevcut filmin niteliklerini yerel form stateimize yükleyebilmeliyiz. `EditMovieForm` bağlandığında, mevcut idmizin filmini api'den alın ve yerel state'e döndürülen verileri kaydedin.
+- [+] Mevcut filmin niteliklerini yerel form stateimize yükleyebilmeliyiz. `EditMovieForm` bağlandığında, mevcut idmizin filmini api'den alın ve yerel state'e döndürülen verileri kaydedin.
 
-- [ ] Bu noktada, düzenleme formu gönderildiğinde hiçbir şey olmuyor. Sunucuyu güncellenmiş film verilerimizle güncellemek için gereken api çağrısını ekleyin.
+- [+] Bu noktada, düzenleme formu gönderildiğinde hiçbir şey olmuyor. Sunucuyu güncellenmiş film verilerimizle güncellemek için gereken api çağrısını ekleyin.
 
-- [ ] Sunucu verilerinizin ve yerel state'inizin senkronize olduğundan emin olmayı unutmayın! Düzenleme formuna, uygulamanın "setMovies" metoduna erişim izni vermek için düzenleme yapmak için gereken değişiklikleri yapın.
+- [+] Sunucu verilerinizin ve yerel state'inizin senkronize olduğundan emin olmayı unutmayın! Düzenleme formuna, uygulamanın "setMovies" metoduna erişim izni vermek için düzenleme yapmak için gereken değişiklikleri yapın.
 
-- [ ] Artık `setMovies`e erişimimiz olduğuna göre, güncellenmiş film listesinin global state'imize kaydedildiğinden emin olun.
+- [+] Artık `setMovies`e erişimimiz olduğuna göre, güncellenmiş film listesinin global state'imize kaydedildiğinden emin olun.
 
-- [ ] Kullanıcıyı halihazırda düzenlenen filmin bağımsız bilgi sayfasına yönlendirin.
+- [+] Kullanıcıyı halihazırda düzenlenen filmin bağımsız bilgi sayfasına yönlendirin.
 
 #### Film silme
 
 > _Bir CRUD özelliği eklediniz! Aferin! Şimdi film silme özelliği ekleyelim._
 
-- [ ] Silmek için gereken "butonu" tutan bileşeni tanımlayın. Bu butona bir event handler ekleyin.
+- [+] Silmek için gereken "butonu" tutan bileşeni tanımlayın. Bu butona bir event handler ekleyin.
 
-- [ ] Görüntülenmekte olan filmi silmek için istekte bulunan bir event handler oluşturun. Bu requestten ne döndürüldüğünü gözlemleyin.
+- [+] Görüntülenmekte olan filmi silmek için istekte bulunan bir event handler oluşturun. Bu requestten ne döndürüldüğünü gözlemleyin.
 
-- [ ] Bir kez daha sunucuyu ve state verilerini senkronize tutmanız gerekecek. `App.js` içinde, `deleteMovie` metodunu bir id alıp, girilen id li filmi verimizden silip state'i güncelleyecek şekilde tamamlayın.
+- [+] Bir kez daha sunucuyu ve state verilerini senkronize tutmanız gerekecek. `App.js` içinde, `deleteMovie` metodunu bir id alıp, girilen id li filmi verimizden silip state'i güncelleyecek şekilde tamamlayın.
 
-- [ ] `deleteMovie` 'yi ilgili bileşene aktarın.
+- [+] `deleteMovie` 'yi ilgili bileşene aktarın.
 
-- [ ] Film silme isteği yapıldığında `deleteMovie` yi çalıştırın, istek tamamlandığında kullanıcıyı `/movies` routeuna yönlendirin.
+- [+] Film silme isteği yapıldığında `deleteMovie` yi çalıştırın, istek tamamlandığında kullanıcıyı `/movies` routeuna yönlendirin.
 
 #### Yeni bir film ekleme
 
 > _Tamam! Artık hazırsın! Şimdi baştan sona bir CRUD oluşturalım._
 
-- [ ] Sıfırdan bir "AddMovieForm" bileşeni oluşturmak için "EditMovieForm.js"yi model olarak kullanın. Bileşen, yeni bir filmin tüm özelliklerini yerel state'de tutmalıdır.
+- [+] Sıfırdan bir "AddMovieForm" bileşeni oluşturmak için "EditMovieForm.js"yi model olarak kullanın. Bileşen, yeni bir filmin tüm özelliklerini yerel state'de tutmalıdır.
 
-- [ ] `AddMovieForm`'a erişim sağlayan bir route ekleyin.
+- [+] `AddMovieForm`'a erişim sağlayan bir route ekleyin.
 
-- [ ] Kullanıcı arayüzünün yeni "AddMovieForm"unuza yönlendirilmesi gereken bölümünü bulun. Bu düğmenin beklendiği gibi çalışmasını sağlayın.
+- [+] Kullanıcı arayüzünün yeni "AddMovieForm"unuza yönlendirilmesi gereken bölümünü bulun. Bu düğmenin beklendiği gibi çalışmasını sağlayın.
 
-- [ ] AddMovieForm'da, form gönderimi için bir event handler ekleyin. Form gönderildiğinde, bileşenin state değerleri ile bir film eklemek için uygun çağırıyı çalıştırın.
+- [+] AddMovieForm'da, form gönderimi için bir event handler ekleyin. Form gönderildiğinde, bileşenin state değerleri ile bir film eklemek için uygun çağırıyı çalıştırın.
 
-- [ ] Bileşeninizin, oluşturulduktan sonra genel state'inin `/movies` dizinine yönlendirmeler için gerekli erişime sahip olduğundan ve bunları çalıştırdığından ve değiştirdiğinden emin olun.
+- [+] Bileşeninizin, oluşturulduktan sonra genel state'inin `/movies` dizinine yönlendirmeler için gerekli erişime sahip olduğundan ve bunları çalıştırdığından ve değiştirdiğinden emin olun.
 
 ### Esnek görevler
 
